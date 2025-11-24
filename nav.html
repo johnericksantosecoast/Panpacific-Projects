@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Navigation Button</title>
+  <style>
+    body {
+  margin: 20px;
+}
+
+.horizontal-menu {
+    background-color: #333;
+}
+
+.horizontal-menu ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.horizontal-menu li {
+    flex: 1;
+}
+
+.horizontal-menu a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px;
+    text-decoration: none;
+}
+
+.horizontal-menu a:hover {
+    background-color: #111;
+}
+
+.vertical-menu {
+    background-color: #333;
+    width: 200px;
+}
+
+.vertical-menu ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.vertical-menu li {
+    margin: 0;
+}
+
+.vertical-menu a {
+    display: block;
+    color: white;
+    text-align: left;
+    padding: 14px;
+    text-decoration: none;
+}
+
+.vertical-menu a:hover {
+    background-color: #111;
+}
+
+.burger-menu {
+    cursor: pointer;
+    display: inline-block;
+    padding: 10px;
+}
+
+.burger-menu .bar {
+    display: block;
+    width: 30px;
+    height: 3px;
+    margin: 5px 0;
+    background-color: #333;
+}
+
+.menu {
+    display: none;
+    background-color: #333;
+}
+
+.burger-menu.active + .menu {
+    display: block;
+}
+
+.menu ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.menu li {
+    margin: 0;
+}
+
+.menu a {
+    display: block;
+    color: white;
+    padding: 14px;
+    text-decoration: none;
+}
+
+.menu a:hover {
+    background-color: #111;
+}
+
+  </style>
+</head>
+
+<body>
+  <h1>Santos, John Erick T.</h1>
+  <h3>
+    Horizontal Navigation Menu
+  </h3>
+  <nav class="horizontal-menu">
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Services</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </nav>
+  <h3>
+    Vertical Navigation Menu
+  </h3>
+  <nav class="vertical-menu">
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Services</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </nav>
+  <h3>
+    Burgerly Navigation Menu
+  </h3>
+  <div class="burger-menu" onclick="this.classList.toggle('active');">
+        <div class="bar"></div>
+        <div class="bar"></div>
+        <div class="bar"></div>
+    </div>
+    <nav class="menu">
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Services</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </nav>
+</body>
+
+</html>
